@@ -86,7 +86,7 @@ void CloudIoTCoreMqtt::mqttConnect(bool skip) {
         skip = false;
         keepgoing = true;
         Serial.println("Waiting 60 seconds, retry will likely fail");
-        delay(this->__max_backoff__);
+        //delay(this->__max_backoff__);
       } else {
         // We're now connected
         Serial.println("\nLibrary connected!");
